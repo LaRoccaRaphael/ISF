@@ -47,13 +47,13 @@ python ./mean_spectrum_msi.py -i /path/to/the/imzML/file.imzML -o1 /path/to/the/
 ```
 python ./peak_picking.py -i /path/to/the/output/file/name_meansp.npy -t 0.01 -o1 /path/to/the/list/of/masses/file.txt
 ```
-The value of the following argument <code>-t</code> corresponds to the size of the window used during peak picking.
+The value of the following argument <code>-t</code> corresponds to the window size used during peak picking.
 
 (3)
 ```
-python ./create_msi_da.py -i /path/to/the/imzML/file.imzML -i2 /path/to/the/list/of/masses/file.txt  -t 0.01 -o1 /path/with/new/MSI/name
+python ./create_msi_da.py -i /path/to/the/imzML/file.imzML -i2 /path/to/the/list/of/masses/file.txt  -tol 0.01 -o1 /path/with/new/MSI/name
 ```
-The value of the following argument <code>-t</code> corresponds to the m/z window around the m/z from the peak list from which we report the maximum intensity value detected in each pixel of an MSI. 
+The value of the following argument <code>-tol</code> corresponds to the m/z window around the m/z from the peak list from which we report the maximum intensity value detected in each pixel of an MSI. 
 
 (4)
 ```
